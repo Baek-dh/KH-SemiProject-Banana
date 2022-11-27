@@ -36,7 +36,8 @@ public class MyPageController {
 		
 		int memberNo = loginMember.getMemberNo();
 		
-		Map<String, Object> map = service.selectGoodsSoldLsit(memberNo);
+		Map<String, Object> map = service.selectGoodsSoldList(memberNo);
+		model.addAttribute("map", map);
 		
 		return "member/myPage_main";
 	}

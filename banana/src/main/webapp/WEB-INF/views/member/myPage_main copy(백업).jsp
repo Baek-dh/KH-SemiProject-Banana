@@ -117,40 +117,187 @@
 
                     <section class="content-favorite">
 
-                        <!-- 게시글 목록 조회 결과가 비어있다면 -->
+                        
 
-                        <%-- choose 내에서는 jsp주석 적어야 해 --%>
-                        <c:choose>
-                            <c:when test = "${empty soldList}">
-                            <%-- 게시글 목록 조회 결과가 비어있다면 --%>
-                            <tr>
-                                <th colspan="6">게시글이 존재하지 않습니다.</th>
-                            </tr>
-                            </c:when>
+                        <%-- 상품박스 --%>
+                        <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/runningCat.png" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot"></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">투썸 마스카포네 치즈를 팝니다. 마싯서용</div>
+                                </div>
+                            </div>
+                            <div class="favorite__content">11달 전</div>
+                            <a href="javascript:openPop()" id = "popopen">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>    
+                        </div>
 
-                            <c:otherwise>
-                                <c:forEach var = "sold" items = "${soldList}">
-                                    <%-- 상품박스 --%>
-                                    <div class="favorite__pack">
-                                        <div>
-                                            <div class="favorite__img">
-                                                <img src="/resources/images/runningCat.png" >
-                                                <i class="fa-solid fa-ellipsis-vertical dot"></i>
-                                            </div>
-                                            <div class="favorite__price-heart">
-                                                <div class="favorite__price">${sold.title}</div>
-                                            </div>
-                                        </div>
-                                        <div class="favorite__content">${sold.createdAt}</div>
-                                        <a href="javascript:openPop()" id = "popopen">
-                                            <div class="testcolor">거래 후기 보내기</div>
-                                        </a>    
-                                    </div>
-                                </c:forEach>
-                            </c:otherwise>
-                        </c:choose>
-            
+                        <%-- 상품박스 --%>
+                        <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/bananaTree.png" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">거지같은 옷</div>
+                                </div>
+                            </div>
+                            <div class="favorite__content">12달 전</div>
+                            <div class="testcolor2">보낸 후기 보기</div>
+                        </div>
 
+                        <%-- 상품박스 --%>
+                        <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">이딴게 옷?</div>
+                                </div>
+                            </div>
+                            <div class="favorite__content">1년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div>
+                        <%-- 상품박스 --%>
+                        <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">이상한 옷</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="favorite__content">1년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div>
+
+                        <%-- 상품박스 --%>
+                        <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">비싼 옷</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="favorite__content">1년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div>
+
+                        
+                        <%-------------- 구분선--------------%>
+                    
+                        <%-- 상품박스 --%>
+                        <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" >
+                                        안녕
+                                    </i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">깨꾹이인형 팔아요</div>
+                                </div>
+                            </div>
+                            <div class="favorite__content">2년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div>
+
+                        <%-- 상품박스 --%>
+                        <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">이클립스냠냠</div>
+                                </div>
+                            </div>
+                            <div class="favorite__content">2년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div>
+
+                        <%-- 상품박스 --%>
+                        <%-- <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">파닥몬파닥파닥</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="favorite__content">3년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div> --%>
+
+                        <%-- 상품박스 --%>
+                        <%-- <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">냥냐얀ㅇ야야야야야야야야야ㅑ야야야ㅑ야ㅑ</div>
+                                    
+                                </div>
+                            </div>
+                            <div class="favorite__content">5년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div> --%>
+
+                        <%-- 상품박스 --%>
+                        <%-- <div class="favorite__pack">
+                            <div>
+                                <div class="favorite__img">
+                                    <img src="/resources/images/sampleGoods.jpg" >
+                                    <i class="fa-solid fa-ellipsis-vertical dot" ></i>
+                                </div>
+                                <div class="favorite__price-heart">
+                                    <div class="favorite__price">집에 가고싶어지는 시간 바로 지금</div>
+                                
+                                </div>
+                            </div>
+                            <div class="favorite__content">5년 전</div>
+                            <a href="javascript:openPop()">
+                                <div class="testcolor">거래 후기 보내기</div>
+                            </a>  
+                        </div>
+                    </section>
+                </section> --%>
+                
                 <div class="popup_layer" id="popup_layer" style="display: none;">
                     <div class="popup_box Scroll ">
                         <div  style="height: 10px; width: 375px; float: top;">

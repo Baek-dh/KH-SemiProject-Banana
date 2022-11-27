@@ -20,7 +20,7 @@ public interface MyPageService {
 	 */
 	public abstract int updateInfo(Member inputMember);
 
-	Map<String, Object> selectGoodsSoldLsit(int memberNo);
+	Map<String, Object> selectGoodsSoldList(int memberNo);
 
 	
 }
